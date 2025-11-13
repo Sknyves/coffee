@@ -57,15 +57,15 @@
         class="lg:hidden bg-white shadow-2xl rounded-2xl p-6 mt-2 border border-gray-100"
       >
         <div class="space-y-4">
-          <a 
+          <router-link 
             v-for="item in navItems" 
             :key="item.name"
-            :href="item.href" 
+            :to="item.href" 
             class="block py-2 font-medium text-gray-900 hover:text-amber-900 transition-colors duration-300"
             @click="isMobileMenuOpen = false"
           >
             {{ item.name }}
-          </a>
+          </router-link>
           <div class="pt-4 border-t border-gray-200 flex items-center gap-4">
             
             <!-- Bouton Panier Mobile -->
@@ -98,6 +98,7 @@ import {
   User, 
   ShoppingCart 
 } from 'lucide-vue-next';
+import router from '@/router';
 
 const cartStore = useCartStore();
 const isMobileMenuOpen = ref(false);

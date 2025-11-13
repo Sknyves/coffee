@@ -23,12 +23,6 @@
 
         <!-- Actions Desktop -->
         <div class="hidden lg:flex items-center gap-4">
-          <button class="p-2 transition-colors duration-300 hover:text-amber-900" :class="textColor">
-            <Search class="w-5 h-5" />
-          </button>
-          <button class="p-2 transition-colors duration-300 hover:text-amber-900" :class="textColor">
-            <User class="w-5 h-5" />
-          </button>
           
           <!-- Bouton Panier avec badge -->
           <button 

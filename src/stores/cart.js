@@ -80,8 +80,7 @@ export const useCartStore = defineStore('cart', {
       const productsStore = useProductsStore();
       productsStore.updateProductStock(product.id, quantity);
 
-      // Ouvrir le panier et montrer un feedback
-      this.isOpen = true;
+      
       
       return this.items.find(item => item.id === product.id);
     },
